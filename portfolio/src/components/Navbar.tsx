@@ -1,7 +1,7 @@
 import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 
-const NavBar = () => {
+const Navbar = () => {
   return (
     <div className="container-fluid sticky-top">
       <nav className="navbar">
@@ -71,3 +71,5 @@ const NavBar = () => {
     </div>
   );
 };
+
+export default Navbar;
