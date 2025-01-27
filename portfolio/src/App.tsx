@@ -1,12 +1,11 @@
 import "./App.css";
-import NavBar from "./components/NavBar";
-import AboutMe from "./components/AboutMe";
-import luffy from "./assets/Photos/Subject.png";
-import StartPage from "./components/StartPage";
-import ProjectCards from "./components/ProjectCards";
-import image1 from "./assets/Photos/Hasbulla.jpeg";
-import image2 from "./assets/Photos/Subject.png";
-import image3 from "./assets/Photos/luffy.jpg";
+import NavBar from "./components/Navbar.tsx";
+import AboutMe from "./components/AboutMe.tsx";
+import StartPage from "./components/StartPage.tsx";
+import ProjectCards from "./components/ProjectCards.tsx";
+import image1 from "./assets/Hasbulla.jpeg";
+import image2 from "./assets/Subject.png";
+import image3 from "./assets/luffy.jpg";
 
 function App() {
   return (
@@ -14,11 +13,11 @@ function App() {
       <NavBar />
 
       <section>
-        <StartPage image={luffy} />
+        <StartPage image={image2} />
       </section>
 
       <section id="AboutMe">
-        <AboutMe imageSrc={luffy} />
+        <AboutMe imageSrc={image2} />
       </section>
 
       <section id="Projects" className="in-body header">

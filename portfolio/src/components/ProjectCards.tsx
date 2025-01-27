@@ -1,4 +1,4 @@
-import "./ProjectCards.css";
+import "./global.css";
 
 interface Props {
   image1: string;

@@ -4,6 +4,7 @@
     align-content: center;
     justify-content: center;
     flex-direction: row;
+    margin-top: 1em;
 }
 .navbar {
     display: flex;

@@ -1,5 +1,5 @@
 import { Fragment } from "react";
-import "./StartPage.css";
+import "./global.css";
 
 interface Props {
   image: string;
