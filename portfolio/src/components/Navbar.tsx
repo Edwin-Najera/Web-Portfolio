@@ -1,4 +1,4 @@
-import "./global.css";
+import "./Navbar.css";
 import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 
@@ -6,7 +6,7 @@ const Navbar = () => {
   return (
     <div className="container-fluid sticky-top">
       <nav className="navbar">
-        <div className="navbar-center nav-links container-fluid">
+        <div className="navbar-center nav-links">
           <button
             className="btn navbar-brand navbar-right"
             onClick={() => {

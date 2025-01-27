@@ -1,5 +1,5 @@
 import { Fragment, useState } from "react";
-import "./global.css";
+import "./AboutMe.css";
 import { Collapse } from "react-collapse";
 
 interface Props {
