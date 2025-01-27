@@ -1,3 +1,4 @@
+import "global.css";
 import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 
