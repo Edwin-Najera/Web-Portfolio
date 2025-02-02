@@ -19,11 +19,16 @@
 }
 
 .navbar{
+    display: flex;
     justify-content: space-between;
-    padding: 1em;
+    align-content: center;
+    background-color: rgb(0, 153, 255);
+    color: rgb(255, 254, 254);
+    padding: 1;
     border-color: black;
-    border-bottom-right-radius: 1em;
     border-bottom-left-radius: 1em;
-    height: 3em;
+    border-bottom-right-radius: 1em;
+    height: 3rem;
     opacity: 0.8;
+    position: sticky;
 }
