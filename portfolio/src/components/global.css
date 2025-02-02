@@ -1,1 +1,29 @@
 /*Global css styles for all components*/
+.container{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    margin: auto;
+}
+
+.container .row{
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.container .column{
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.navbar{
+    justify-content: space-between;
+    padding: 1em;
+    border-color: black;
+    border-bottom-right-radius: 1em;
+    border-bottom-left-radius: 1em;
+    height: 3em;
+    opacity: 0.8;
+}
