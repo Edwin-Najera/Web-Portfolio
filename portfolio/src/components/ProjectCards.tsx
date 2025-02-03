@@ -1,11 +1,13 @@
 import "./global.css";
+import Subject from "./Subject.png";
+import Hasbulla from "./hasbulla.jpeg";
 
 const ProjectCards = () => {
   return (
     <div className="row">
       <div className="col-sm-3">
         <div className="card">
-          <img className="card-img-top" src="src" alt="alt" />
+          <img className="card-img-top " src={Subject} alt="alt" />
           <div className="card-body">
             <h5 className="card-title">Project 1</h5>
             <p className="card-text">This is some text for the card for now</p>
@@ -14,7 +16,7 @@ const ProjectCards = () => {
       </div>
       <div className="col-sm-3">
         <div className="card">
-          <img className="card-img-top" src="src" alt="alt" />
+          <img className="card-img-top mh-50" src={Hasbulla} alt="alt" />
           <div className="card-body">
             <h5 className="card-title">Project 2</h5>
             <p className="card-text">This is some text for the card for now</p>
