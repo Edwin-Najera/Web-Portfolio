@@ -35,3 +35,8 @@
 .navbar-list{
     list-style-type: none;
 }
+
+.card{
+    width: 18rem;
+    background-color:aqua;
+}
