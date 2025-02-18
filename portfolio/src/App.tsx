@@ -8,17 +8,17 @@ const App = () => {
   return (
     <Fragment>
       <Navbar />
-      <div id="About Me">
-        <h2 className="title-text">About Me</h2>
+      <div id="AboutMe">
+        <h2 className="title-text" />
         <AboutMe />
       </div>
 
-      <div id="projects">
+      <div id="Projects">
         <h2 className="title-text">Projects</h2>
         <ProjectCards />
       </div>
 
-      <div id="contact">
+      <div id="Contact">
         <h2 className="title-text">Contact Me</h2>
       </div>
     </Fragment>

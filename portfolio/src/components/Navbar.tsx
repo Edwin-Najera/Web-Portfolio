@@ -4,7 +4,7 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 const Navbar = () => {
   return (
-    <nav className="navbar">
+    <nav className="navbar fixed-top">
       <div className="container-fluid">
         <h4
           className="navbar-brand btn"
@@ -15,7 +15,7 @@ const Navbar = () => {
           Edwin Najera
         </h4>
         <div>
-          <ul className="navbar-list container">
+          <ul className="navbar-list container ">
             <li className="nav-item">
               <ScrollLink
                 className="btn"
