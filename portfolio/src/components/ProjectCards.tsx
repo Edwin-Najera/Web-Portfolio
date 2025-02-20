@@ -1,6 +1,6 @@
 import "./global.css";
-import Subject from "./Subject.png";
-import Hasbulla from "./hasbulla.jpeg";
+import Subject from "./Photos/Subject.png";
+import Hasbulla from "./Photos/hasbulla.jpeg";
 
 const ProjectCards = () => {
   return (
