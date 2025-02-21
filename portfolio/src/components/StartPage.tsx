@@ -4,7 +4,10 @@ import "./global.css";
 const StartPage = () => {
   return (
     <div className="startdiv">
-      <h2 className="typer sideimg">Edwin Najera</h2>
+      <div>
+        <h1 className="sideimg">Edwin L Najera Gonzalez</h1>
+        <p className="typer"> Computer Science Undergraduate</p>
+      </div>
       <img className="img-profile" src={Profile} alt="ProfilePic" />
     </div>
   );
