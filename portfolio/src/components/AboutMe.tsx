@@ -1,7 +1,7 @@
 const AboutMe = () => {
   return (
     <div>
-      <div className="txt">
+      <p className="txt">
         <section className="header">About Me</section>
         Hello, my name is Edwin (Leo) Najera Gonzalez, and I am a sophomore
         currently pursuing a degree in Computer Science. I have developed a
@@ -19,7 +19,7 @@ const AboutMe = () => {
         projects I’m creating. My goal is to build a strong portfolio and
         continue to grow as both a software developer and a computer scientist.
         <br />
-      </div>
+      </p>
     </div>
   );
 };

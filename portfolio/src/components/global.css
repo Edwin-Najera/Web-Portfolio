@@ -1,4 +1,7 @@
 /*Global css styles for all components*/
+.border-check{
+    border: solid red;
+}
 .container{
     display: flex;
     align-content: center;
@@ -37,6 +40,36 @@
     list-style-type: none;
 }
 
+/*StartPage.css*/
+.startdiv{
+    display: grid;
+}
+.img-profile{
+    width: auto;
+    height: 200px;
+    border-radius: 50% 50% 5% 50%;
+}
+
+.sideimg{
+    color: white;
+}
+
+.typer{
+    position: relative;
+    max-width: fit-content;
+    width: 30%;
+    text-wrap: nowrap;
+    overflow: hidden;
+    animation: typing 2s steps(25) infinite 
+    alternate;
+}
+
+@keyframes typing{
+    from{
+        width: 0%;
+    }
+}
+
 .card{
     width: 18rem;
     background-color:aqua;
@@ -50,8 +83,10 @@
     background-color: rgb(0, 0, 0);
     transform: translateY(-5px);
     color: white;
-  }
+}
 
 .txt{
     color: white;
+    border: solid red;
+    max-width: 75%;
 }

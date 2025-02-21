@@ -3,8 +3,9 @@ import "./global.css";
 
 const StartPage = () => {
   return (
-    <div>
-      <img src={Profile} alt="ProfilePic" />
+    <div className="startdiv">
+      <h2 className="typer sideimg">Edwin Najera</h2>
+      <img className="img-profile" src={Profile} alt="ProfilePic" />
     </div>
   );
 };
