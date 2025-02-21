@@ -42,8 +42,9 @@
 
 /*StartPage.css*/
 .startdiv{
-    display: grid;
+    display: block;
 }
+
 .img-profile{
     width: auto;
     height: 200px;
@@ -55,20 +56,26 @@
 }
 
 .typer{
-    position: relative;
-    max-width: fit-content;
-    width: 30%;
     text-wrap: nowrap;
     overflow: hidden;
-    animation: typing 2s steps(25) infinite 
-    alternate;
+    max-width: fit-content;
+    border-right: .2ch solid white;
+    margin: 0 auto;
+    letter-spacing: auto; 
+    animation: typing 3.5s steps(30) infinite alternate-reverse,
+    blink-caret .75s step-end infinite;
 }
 
 @keyframes typing{
-    from{
-        width: 0%;
-    }
+    from{width: 0ch}
+    to{width: 10ch}
 }
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: white; }
+  }
 
 .card{
     width: 18rem;
