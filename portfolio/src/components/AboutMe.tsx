@@ -7,14 +7,7 @@ const AboutMe = () => {
 
   return (
     <Fragment>
-      <div
-        className="container"
-        style={{
-          marginTop: "200px",
-          alignItems: "start",
-          padding: "50px",
-        }}
-      >
+      <div className="container" id="About">
         <img className="AboutPhoto" alt="About Me Photo" />
         <div id="column">
           <div>

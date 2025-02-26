@@ -48,7 +48,7 @@
 
 /*StartPage.css*/
 .startdiv {
-  margin-top: 50px;
+  margin-top: 1%;
   display: flex;
   align-items: center;
   flex-direction: row;
@@ -58,18 +58,22 @@
 .img-profile {
   display: block;
   width: auto;
-  height: 400px;
+  height: 600px;
   border-radius: 50% 50% 2% 50%;
-  box-shadow: 0 0 0 2em purple;
-  margin-right: 4em;
+  box-shadow: 0 0 2em 2em #f4aab9, 0 0 0 1em #66ccff;
+  margin: 4em;
+  padding: 5em;
   justify-self: end;
 }
 
 .sideimg {
   color: white;
+  font-family: "Palatino";
+  font-size: 2em;
 }
 
 .typer {
+  font-family: "Palatino";
   color: white;
   text-wrap: nowrap;
   overflow: hidden;
@@ -77,8 +81,9 @@
   border-right: 0.2ch solid white;
   margin: 0 auto;
   letter-spacing: auto;
-  animation: typing 2s steps(30) infinite alternate-reverse,
+  animation: typing 2s steps(30, end) infinite alternate-reverse,
     blink-caret 0.75s step-end infinite;
+  animation-delay: 1s;
 }
 
 @keyframes typing {
@@ -123,11 +128,22 @@
 }
 
 .txt {
+  font-family: "Palatino";
   color: white;
   max-width: 75%;
 }
 
 /*AboutMe.css*/
+.header {
+  font-size: 5em;
+  color: linear-gradient(left, white, pink);
+}
+
+#About {
+  padding: 5%;
+  margin-top: 200px;
+  align-items: start;
+}
 #column {
   display: inline-block;
 }
@@ -180,9 +196,6 @@
   outline: none;
 }
 
-div .sk1 .sk2 .sk3 .sk4 {
-  vertical-align: top;
-}
 .c1 {
   display: inline-block;
 }
@@ -196,6 +209,8 @@ div .sk1 .sk2 .sk3 .sk4 {
   display: inline-block;
 }
 div .sk1 {
+  vertical-align: top;
+  font-family: "Palatino";
   grid-area: skills;
   color: white;
   white-space: nowrap;
@@ -203,10 +218,12 @@ div .sk1 {
   width: 0;
   border-right: 0.15em solid white;
   letter-spacing: auto;
-  animation: typing 250ms steps(3, end) forwards, blink-caret 0.75s step-end;
+  animation: typing 250ms steps(3, end) forwards;
 }
 
 div .sk2 {
+  vertical-align: top;
+  font-family: "Palatino";
   color: white;
   white-space: nowrap;
   overflow: hidden;
@@ -217,6 +234,8 @@ div .sk2 {
   animation-delay: 250ms;
 }
 div .sk3 {
+  vertical-align: top;
+  font-family: "Palatino";
   color: white;
   white-space: nowrap;
   overflow: hidden;
@@ -227,6 +246,8 @@ div .sk3 {
   animation-delay: 500ms;
 }
 div .sk4 {
+  vertical-align: top;
+  font-family: "Palatino";
   color: white;
   white-space: nowrap;
   overflow: hidden;
@@ -238,6 +259,8 @@ div .sk4 {
 }
 
 div .ed1 {
+  vertical-align: top;
+  font-family: "Palatino";
   color: white;
   white-space: nowrap;
   overflow: hidden;

@@ -3,7 +3,13 @@ import "./global.css";
 const ProjectCards = () => {
   return (
     <div className="row container">
-      <div className="col-sm-4">
+      <a
+        className="col-sm-4"
+        href="https://github.com/Edwin-Najera/Web-Portfolio"
+        target="_blank"
+        rel="noopener noreferrer"
+        style={{ textDecoration: "none" }}
+      >
         <div className="card">
           <img className="card-img-top mh-50" alt="Project Image" />
           <div className="card-body">
@@ -21,7 +27,7 @@ const ProjectCards = () => {
             </p>
           </div>
         </div>
-      </div>
+      </a>
       <div className="col-sm-3">
         <div className="card mb-3">
           <div className="card-body">
