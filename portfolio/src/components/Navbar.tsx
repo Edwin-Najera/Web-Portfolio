@@ -4,7 +4,7 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 const Navbar = () => {
   return (
-    <nav className="navbar fixed-top">
+    <nav className="navbar fixed-top bg-body-tertiary">
       <div className="container-fluid">
         <h4
           className="navbar-brand btn"
@@ -17,38 +17,22 @@ const Navbar = () => {
         <div>
           <ul className="navbar-list container ">
             <li className="nav-item">
-              <ScrollLink
-                className="btn"
-                to="AboutMe"
-                smooth={true}
-                duration={50}
-              >
-                About Me
+              <ScrollLink to="AboutMe" smooth={true} duration={50}>
+                About
               </ScrollLink>
             </li>
             <li className="nav-item">
-              <ScrollLink
-                className="btn"
-                to="Projects"
-                smooth={true}
-                duration={50}
-              >
+              <ScrollLink to="Projects" smooth={true} duration={50}>
                 Projects
               </ScrollLink>
             </li>
             <li className="nav-item">
-              <ScrollLink
-                className="btn"
-                to="Contact"
-                smooth={true}
-                duration={50}
-              >
-                Contact Me
+              <ScrollLink to="Contact" smooth={true} duration={50}>
+                Contact
               </ScrollLink>
             </li>
             <li className="nav-item">
               <a
-                className="btn"
                 href="https://github.com/Edwin-Najera"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -56,9 +40,8 @@ const Navbar = () => {
                 <FaGithub size={30} />
               </a>
             </li>
-            <li className="nav-item">
+            <li className="nav-item" style={{ marginInlineEnd: "10%" }}>
               <a
-                className="btn"
                 href="https://www.linkedin.com/in/edwin-najera-49767a30b"
                 target="_blank"
                 rel="noopener noreferrer"

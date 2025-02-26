@@ -1,6 +1,5 @@
 import { Collapse } from "react-collapse";
 import { Fragment, useState } from "react";
-import Photo from "./Photos/About Me.jpg";
 
 const AboutMe = () => {
   const [isSkillsOpen, setSkillsOpen] = useState(false);
@@ -8,8 +7,15 @@ const AboutMe = () => {
 
   return (
     <Fragment>
-      <div className="container">
-        <img className="AboutPhoto" src={Photo} alt="About Me Photo" />
+      <div
+        className="container"
+        style={{
+          marginTop: "200px",
+          alignItems: "start",
+          padding: "50px",
+        }}
+      >
+        <img className="AboutPhoto" alt="About Me Photo" />
         <div id="column">
           <div>
             <p className="txt">

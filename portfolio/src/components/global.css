@@ -34,6 +34,14 @@
   top: 0px;
 }
 
+.nav-item {
+  cursor: pointer;
+  margin-left: 5%;
+  width: 100%;
+  flex-wrap: nowrap;
+  color: black;
+}
+
 .navbar-list {
   list-style-type: none;
 }
@@ -52,7 +60,8 @@
   width: auto;
   height: 400px;
   border-radius: 50% 50% 2% 50%;
-  box-shadow: -25px 0px 25px purple;
+  box-shadow: 0 0 0 2em purple;
+  margin-right: 4em;
   justify-self: end;
 }
 
@@ -99,7 +108,7 @@
 }
 
 .card {
-  width: 18rem;
+  width: 25rem;
   background-color: aqua;
   border: 1px solid #ddd;
   border-radius: 8px;
@@ -121,11 +130,11 @@
 /*AboutMe.css*/
 #column {
   display: inline-block;
-  border: solid red;
 }
 
 .AboutPhoto {
-  transform: scale(70%);
+  margin-right: 1%;
+  height: 500px;
 }
 
 .button-container {
@@ -194,7 +203,7 @@ div .sk1 {
   width: 0;
   border-right: 0.15em solid white;
   letter-spacing: auto;
-  animation: typing 250ms steps(4, end) forwards, blink-caret 0.75s step-end;
+  animation: typing 250ms steps(3, end) forwards, blink-caret 0.75s step-end;
 }
 
 div .sk2 {
