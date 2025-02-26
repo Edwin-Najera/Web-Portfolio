@@ -49,17 +49,17 @@
 }
 
 .img-profile{
-    position: absolute;
-    transform: translate(0, -50%);
-    transform: scale(0.10);
+    width: auto;
+    height: 300px;
     margin: auto;
-    border-radius: 50% 50% 5% 50%;
-    object-fit: cover;
+    border-radius: 50% 50% 2% 50%;
     box-shadow: -25px 25px 25px purple;
+    justify-content: end;
 }
 
 .sideimg{
     color: white;
+    transform: translateX(25%)
 }
 
 .typer{
@@ -84,6 +84,15 @@
     from, to { border-color: transparent }
     50% { border-color: white; }
   }
+
+
+/*Project Cards.css*/
+.grid-container{
+    display: grid;
+    grid-template-areas: 
+        "card card card-sm";
+        
+}
 
 .card{
     width: 18rem;
