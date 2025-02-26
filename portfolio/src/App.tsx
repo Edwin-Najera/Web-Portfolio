@@ -9,21 +9,21 @@ const App = () => {
   return (
     <Fragment>
       <Navbar />
-      <div className="border-check">
+      <div>
         <StartPage />
       </div>
 
-      <div className="border-check" id="AboutMe">
+      <div id="AboutMe">
         <h2 className="title-text" />
         <AboutMe />
       </div>
 
-      <div className="border-check" id="Projects">
+      <div id="Projects">
         <h2 className="title-text">Projects</h2>
         <ProjectCards />
       </div>
 
-      <div className="border-check" id="Contact">
+      <div id="Contact">
         <h2 className="title-text">Contact Me</h2>
       </div>
     </Fragment>

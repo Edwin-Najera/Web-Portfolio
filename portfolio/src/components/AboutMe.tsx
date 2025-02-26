@@ -1,26 +1,97 @@
+import { Collapse } from "react-collapse";
+import { Fragment, useState } from "react";
+import Photo from "./Photos/About Me.jpg";
+
 const AboutMe = () => {
+  const [isSkillsOpen, setSkillsOpen] = useState(false);
+  const [isEducationOpen, setEducationOpen] = useState(false);
+
   return (
-    <div>
-      <p className="txt">
-        <section className="header">About Me</section>
-        Hello, my name is Edwin (Leo) Najera Gonzalez, and I am a sophomore
-        currently pursuing a degree in Computer Science. I have developed a
-        growing interest and passion for software development. As I continue my
-        academic journey, I am also working to strengthen my foundation in
-        computer science, focusing on languages such as C++, Python, and Java,
-        along with front-end technologies like React using TypeScript and
-        JavaScript. While I don’t have many major projects under my belt yet, I
-        am actively building smaller projects that allow me to explore and apply
-        the concepts I learn in class and during my personal time.
-        <br />
-        <br />I am eager to expand my knowledge and experience, excited to take
-        on new challenges and tasks in the tech world. Currently, my focus is on
-        improving my coding skills and tackling real-world problems through the
-        projects I’m creating. My goal is to build a strong portfolio and
-        continue to grow as both a software developer and a computer scientist.
-        <br />
-      </p>
-    </div>
+    <Fragment>
+      <div className="container">
+        <img className="AboutPhoto" src={Photo} alt="About Me Photo" />
+        <div id="column">
+          <div>
+            <p className="txt">
+              <section className="header">About Me</section>
+              Hi! I’m Edwin Najera, a Computer Science undergraduate at the
+              University of Texas at Arlington. I’m passionate about technology,
+              problem-solving, and building innovative solutions through code.
+              Whether it's software development, AI, or web applications, I’m
+              always eager to explore new challenges and expand my skill set.
+              <br />
+              Outside of coding, I enjoy gaming, playing soccer, and
+              continuously learning new tech skills. Feel free to connect—I’m
+              always open to collaborating and sharing ideas!
+              <br />
+            </p>
+          </div>
+          <div className="container-row">
+            <div className="button-container">
+              <button
+                className="btn button-collapse"
+                type="button"
+                formTarget="skills"
+                aria-expanded="false"
+                aria-controls="skills"
+                onClick={() => {
+                  setSkillsOpen(!isSkillsOpen);
+                  setEducationOpen(false);
+                }}
+              >
+                <span className="button-text">Skills</span>
+                <div className="filler" />
+              </button>
+              <section id="skills">
+                <Collapse id="skills" isOpened={isSkillsOpen}>
+                  <div className="c1">
+                    <div className={isSkillsOpen ? "sk1" : ""}>C++</div>
+                  </div>
+                  <br />
+                  <div className="c2">
+                    <div className={isSkillsOpen ? "sk2" : ""}>Java</div>
+                  </div>
+                  <br />
+                  <div className="c3">
+                    <div className={isSkillsOpen ? "sk3" : ""}>Python</div>
+                  </div>
+                  <br />
+                  <div className="c4">
+                    <div className={isSkillsOpen ? "sk4" : ""}>React</div>
+                  </div>
+                  <br />
+                </Collapse>
+              </section>
+            </div>
+            <div className="button-container">
+              <button
+                className="btn button-collapse"
+                type="button"
+                formTarget="skills"
+                aria-expanded="false"
+                aria-controls="skills"
+                onClick={() => {
+                  setSkillsOpen(false);
+                  setEducationOpen(!isEducationOpen);
+                }}
+              >
+                <span className="button-text">Education</span>
+                <div className="filler" />
+              </button>
+              <section id="education">
+                <Collapse id="education" isOpened={isEducationOpen}>
+                  <div className="c1">
+                    <div className={isEducationOpen ? "ed1" : ""}>
+                      Comp Sci Undergrad
+                    </div>
+                  </div>
+                </Collapse>
+              </section>
+            </div>
+          </div>
+        </div>
+      </div>
+    </Fragment>
   );
 };
 
