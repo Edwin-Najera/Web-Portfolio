@@ -4,7 +4,7 @@ const ProjectCards = () => {
   return (
     <div className="row container">
       <a
-        className="col-sm-4"
+        className="col-sm"
         href="https://github.com/Edwin-Najera/Web-Portfolio"
         target="_blank"
         rel="noopener noreferrer"
@@ -28,8 +28,8 @@ const ProjectCards = () => {
           </div>
         </div>
       </a>
-      <div className="col-sm-3">
-        <div className="card mb-3">
+      <div className="col-sm">
+        <div className="card mb-5">
           <div className="card-body">
             <h5 className="card-title">Java Projects</h5>
             <p className="card-text">Small side projects using Java language</p>

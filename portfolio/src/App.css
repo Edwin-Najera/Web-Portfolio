@@ -1,5 +1,5 @@
-body{
-  background-image: linear-gradient(to top,rgb(3, 3, 72), rgb(13, 11, 17));
+body {
+  background-image: linear-gradient(to top, rgb(3, 3, 72), rgb(13, 11, 17));
   background-color: black;
 }
 
@@ -10,6 +10,49 @@ body{
   color: white;
 }
 
-.title-text{
-  color:white;
+.title-text {
+  color: white;
+}
+
+#AppGrid {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "nav nav nav nav nav "
+    "StartPage StartPage StartPage StartPage StartPage"
+    "AboutMe AboutMe AboutMe AboutMe AboutMe"
+    "ProjectCard ProjectCard ProjectCard ProjectCard ProjectCard"
+    "ProjectCard ProjectCard ProjectCard ProjectCard ProjectCard"
+    "Contact Contact Contact Contact Contact"
+    "Footer Footer Footer Footer Footer";
+  grid-template-columns: 1fr;
+}
+
+#AppGrid > #Navbar {
+  grid-area: nav;
+}
+
+#AppGrid > #StartPage {
+  grid-area: StartPage;
+}
+
+#AppGrid > #AboutMe {
+  grid-area: AboutMe;
+}
+
+#AppGrid > #ProjectCard {
+  grid-area: ProjectCard;
+  grid-column-start: 5;
+}
+
+#ProjectCard {
+  justify-self: end;
+}
+
+#AppGrid > #Contact {
+  grid-area: Contact;
+}
+
+#AppGrid > Footer {
+  grid-area: Footer;
 }

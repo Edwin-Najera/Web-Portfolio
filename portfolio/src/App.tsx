@@ -8,23 +8,25 @@ import StartPage from "./components/StartPage";
 const App = () => {
   return (
     <Fragment>
-      <Navbar />
-      <div>
-        <StartPage />
-      </div>
+      <div id="AppGrid">
+        <div id="Navbar">
+          <Navbar />
+        </div>
 
-      <div id="AboutMe">
-        <h2 className="title-text" />
-        <AboutMe />
-      </div>
-
-      <div id="Projects">
-        <h2 className="title-text">Projects</h2>
-        <ProjectCards />
-      </div>
-
-      <div id="Contact">
-        <h2 className="title-text">Contact Me</h2>
+        <div id="StartPage">
+          <StartPage />
+        </div>
+        <div id="AboutMe">
+          <h2 className="title-text" />
+          <AboutMe />
+        </div>
+        <div id="Projects">
+          <h2 className="title-text">Projects</h2>
+          <ProjectCards />
+        </div>
+        <div id="Contact">
+          <h2 className="title-text">Contact Me</h2>
+        </div>
       </div>
     </Fragment>
   );
