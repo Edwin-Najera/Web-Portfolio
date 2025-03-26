@@ -5,7 +5,6 @@ import ProjectCards from "./components/ProjectCards";
 import AboutMe from "./components/AboutMe";
 import StartPage from "./components/StartPage";
 import Contact from "./components/Contact";
-import Footer from "./components/footer";
 
 const App = () => {
   return (
@@ -34,9 +33,6 @@ const App = () => {
           </h2>
           <Contact />
         </div>
-      </div>
-      <div>
-        <Footer />
       </div>
     </Fragment>
   );

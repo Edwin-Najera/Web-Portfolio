@@ -46,6 +46,7 @@ const Contact = () => {
               type="submit"
               name="submit"
               id="submit"
+              onClick={() => setEmailSubmitted(true)}
             />
           </div>
         </form>
