@@ -4,7 +4,11 @@ import "./global.css";
 const Contact = () => {
   const [emailSubmitted, setEmailSubmitted] = useState(false);
 
-  const handleSubmit = () => {};
+  const handleSubmit = () => {
+    if (emailSubmitted) {
+      console.log("Email will be submitted");
+    }
+  };
   return (
     <Fragment>
       <div className="container contact">
