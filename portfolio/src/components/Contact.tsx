@@ -4,9 +4,38 @@ import "./global.css";
 const Contact = () => {
   const [emailSubmitted, setEmailSubmitted] = useState(false);
 
-  const handleSubmit = () => {
-    if (emailSubmitted) {
-      console.log("Email will be submitted");
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    const data = {
+      email: e.target.email.value,
+      subject: e.target.email.value,
+      message: e.target.email.value,
+    };
+
+    const JSONdata = JSON.stringify(data);
+    const endpoint = "/api/send";
+
+    const options = {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSONdata,
+    };
+
+    const response = await fetch(endpoint, options);
+
+    // Check if the response is OK (status code 200-299)
+    if (response.ok) {
+      const resData = await response.json();
+      console.log("Message Sent.", resData);
+      setEmailSubmitted(true);
+    } else {
+      // If not OK, log the response for debugging
+      const errorText = await response.text(); // Get error text
+      console.error("Error:", errorText);
+      throw new Error("Error sending message: " + errorText);
     }
   };
   return (
@@ -21,7 +50,9 @@ const Contact = () => {
         </div>
         <form onSubmit={handleSubmit}>
           <div className="container column">
-            <label className="label-tab">Enter Your Email: </label>
+            <label htmlFor="email" className="label-tab">
+              Enter Your Email:{" "}
+            </label>
             <input
               className="input-item"
               type="text"
@@ -29,14 +60,18 @@ const Contact = () => {
               placeholder="example@email.com"
               color="white"
             />
-            <label className="label-tab">Subject: </label>
+            <label htmlFor="subject" className="label-tab">
+              Subject:{" "}
+            </label>
             <input
               className="input-item"
               type="text"
               name="message"
               placeholder="Subject"
             />
-            <label className="label-tab">Message: </label>
+            <label htmlFor="message" className="label-tab">
+              Message:{" "}
+            </label>
             <input
               className="input-item"
               type="text"
@@ -50,8 +85,14 @@ const Contact = () => {
               type="submit"
               name="submit"
               id="submit"
-              onClick={() => setEmailSubmitted(true)}
+              onClick={handleSubmit}
             />
+            {emailSubmitted && (
+              <p className="text-sm pt-2 text-white">
+                Message Sent Successfully! I will get back to you as soon as I
+                can!
+              </p>
+            )}
           </div>
         </form>
       </div>

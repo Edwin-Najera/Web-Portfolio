@@ -1,55 +1,56 @@
 import "./global.css";
-import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
+import { Link as ScrollLink } from "react-scroll";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 const Navbar = () => {
   return (
-    <nav className="navbar navbar-expand-lg fixed-top bg-body-tertiary">
+    <nav className="navbar navbar-expand-lg bg-body-tertiary fixed-top">
       <div className="container-fluid">
-        <h4
-          className="navbar-brand btn"
-          onClick={() => {
-            scroll.scrollToTop({ duration: 50 });
-          }}
+        <a className="navbar-brand" href="#">
+          Edwin N.
+        </a>
+        <button
+          className="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
         >
-          Edwin Najera
-        </h4>
-        <div>
-          <ul className="navbar-list container ">
-            <li className="nav-item">
-              <ScrollLink to="AboutMe" smooth={true} duration={50}>
-                About
-              </ScrollLink>
-            </li>
-            <li className="nav-item">
+          <span className="navbar-toggler-icon"></span>
+        </button>
+        <div className="collapse navbar-collapse" id="navbarNav">
+          <div className="navbar-nav me-auto mb-2 mb-lg-0" id="nav-items">
+            <a className="nav-link" href="#">
+              About
+            </a>
+            <a className="nav-link" href="#">
               <ScrollLink to="Projects" smooth={true} duration={50}>
                 Projects
               </ScrollLink>
-            </li>
-            <li className="nav-item">
-              <ScrollLink to="Contact" smooth={true} duration={50}>
-                Contact
-              </ScrollLink>
-            </li>
-            <li className="nav-item">
-              <a
-                href="https://github.com/Edwin-Najera"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <FaGithub size={30} />
-              </a>
-            </li>
-            <li className="nav-item" style={{ marginInlineEnd: "10%" }}>
-              <a
-                href="https://www.linkedin.com/in/edwin-najera-49767a30b"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <FaLinkedin size={30} />
-              </a>
-            </li>
-          </ul>
+            </a>
+            <a className="nav-link" href="#">
+              Contact
+            </a>
+            <a
+              className="nav-link"
+              aria-current="page"
+              href="https://github.com/Edwin-Najera"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaGithub size={30} />
+            </a>
+            <a
+              className="nav-link"
+              aria-current="page"
+              href="https://www.linkedin.com/in/edwin-najera-49767a30b"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaLinkedin size={30} />
+            </a>
+          </div>
         </div>
       </div>
     </nav>

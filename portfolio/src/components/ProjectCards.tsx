@@ -2,7 +2,7 @@ import "./global.css";
 
 const ProjectCards = () => {
   return (
-    <div className="row container">
+    <div className="row row-cols-1 row-cols-md-2 g-4">
       <a
         className="col-sm-4"
         href="https://github.com/Edwin-Najera/Web-Portfolio"

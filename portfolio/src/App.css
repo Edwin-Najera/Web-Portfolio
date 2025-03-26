@@ -27,6 +27,9 @@ body {
     "Contact Contact Contact Contact Contact"
     "Footer Footer Footer Footer Footer";
   grid-template-columns: 1fr;
+
+  padding-left: 32px;
+  padding-right: 32px;
 }
 
 #AppGrid > #Navbar {
