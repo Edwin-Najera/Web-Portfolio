@@ -4,7 +4,7 @@ const ProjectCards = () => {
   return (
     <div className="row container">
       <a
-        className="col-sm"
+        className="col-sm-4"
         href="https://github.com/Edwin-Najera/Web-Portfolio"
         target="_blank"
         rel="noopener noreferrer"
@@ -28,13 +28,22 @@ const ProjectCards = () => {
           </div>
         </div>
       </a>
-      <div className="col-sm">
-        <div className="card mb-5">
-          <div className="card-body">
-            <h5 className="card-title">Java Projects</h5>
-            <p className="card-text">Small side projects using Java language</p>
+      <div className="col-sm-4">
+        <a
+          href="https://github.com/Edwin-Najera/Java-Mini-Projects"
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{ textDecoration: "none" }}
+        >
+          <div className="card mb-5">
+            <div className="card-body">
+              <h5 className="card-title">Java Projects</h5>
+              <p className="card-text">
+                Small side projects using Java language
+              </p>
+            </div>
           </div>
-        </div>
+        </a>
         <div className="card">
           <div className="card-body">
             <h5 className="card-title">C++ Projects</h5>

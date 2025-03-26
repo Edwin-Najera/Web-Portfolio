@@ -12,6 +12,7 @@ body {
 
 .title-text {
   color: white;
+  justify-self: center;
 }
 
 #AppGrid {
@@ -55,4 +56,15 @@ body {
 
 #AppGrid > Footer {
   grid-area: Footer;
+}
+
+#project {
+  font-size: 5em;
+  margin-bottom: 5%;
+}
+
+#contact {
+  font-size: 5em;
+  margin-top: 6%;
+  margin-bottom: 2%;
 }
