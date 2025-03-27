@@ -10,7 +10,7 @@ const ProjectCards = () => {
         rel="noopener noreferrer"
         style={{ textDecoration: "none" }}
       >
-        <div className="card">
+        <div className="card" id="projects">
           <img className="card-img-top mh-50" alt="Project Image" />
           <div className="card-body">
             <h5 className="card-title">Personal Portfolio</h5>
@@ -35,7 +35,7 @@ const ProjectCards = () => {
           rel="noopener noreferrer"
           style={{ textDecoration: "none" }}
         >
-          <div className="card mb-5">
+          <div className="card mb-5" id="projects">
             <div className="card-body">
               <h5 className="card-title">Java Projects</h5>
               <p className="card-text">
@@ -44,7 +44,7 @@ const ProjectCards = () => {
             </div>
           </div>
         </a>
-        <div className="card">
+        <div className="card" id="projects">
           <div className="card-body">
             <h5 className="card-title">C++ Projects</h5>
             <p className="card-text">Small side projects using C++ language</p>

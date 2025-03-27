@@ -14,17 +14,16 @@
 
 /*StartPage.css*/
 #Intro {
-  padding-top: 5%;
+  padding: 5% 0 5% 0;
   justify-items: center;
-  border: solid red;
+  align-items: center;
 }
 
-.img-profile {
-  width: auto;
-  height: 600px;
+.img-fluid {
+  max-width: 25%;
   border-radius: 50% 50% 2% 50%;
   box-shadow: 0 0 3em 2em #f4aab9, 0 0 0 1em #66ccff;
-  margin: 1em;
+  margin-left: 5%;
 }
 
 .sideimg {
@@ -91,7 +90,7 @@
   overflow: hidden;
 }
 
-.card:hover {
+#projects:hover {
   background-color: rgb(0, 0, 0);
   color: white;
 }
@@ -120,6 +119,33 @@
   height: 500px;
 }
 
+.btn {
+  color: white;
+  position: relative;
+  padding: 5px 30px;
+  color: white;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  outline: none;
+}
+
+#skills {
+  color: white;
+  text-align: center;
+  border: solid red;
+}
+
+#education {
+  color: white;
+  text-align: center;
+}
+
+#buttons {
+  width: 25%;
+}
+
+/* 
 .button-container {
   display: inline-block;
   vertical-align: top;
@@ -134,7 +160,8 @@
   font-size: 16px;
   cursor: pointer;
   outline: none;
-}
+} 
+*/
 
 .button-text {
   position: relative;
@@ -156,86 +183,12 @@
   transition: transform 0.4s;
 }
 
-.button-collapse:hover .filler {
+.btn:hover .filler {
   transform: scale(1, 1);
 }
 
-.button-collapse:focus {
+.btn:focus {
   outline: none;
-}
-
-.c1 {
-  display: inline-block;
-}
-.c2 {
-  display: inline-block;
-}
-.c3 {
-  display: inline-block;
-}
-.c4 {
-  display: inline-block;
-}
-div .sk1 {
-  vertical-align: top;
-  font-family: "Palatino";
-  grid-area: skills;
-  color: white;
-  white-space: nowrap;
-  overflow: hidden;
-  width: 0;
-  border-right: 0.15em solid white;
-  letter-spacing: auto;
-  animation: typing 250ms steps(3, end) forwards;
-}
-
-div .sk2 {
-  vertical-align: top;
-  font-family: "Palatino";
-  color: white;
-  white-space: nowrap;
-  overflow: hidden;
-  width: 0;
-  border-right: 0.15em solid white;
-  letter-spacing: auto;
-  animation: typing 250ms steps(4, end) forwards;
-  animation-delay: 250ms;
-}
-div .sk3 {
-  vertical-align: top;
-  font-family: "Palatino";
-  color: white;
-  white-space: nowrap;
-  overflow: hidden;
-  width: 0;
-  border-right: 0.15em solid white;
-  letter-spacing: auto;
-  animation: typing 500ms steps(8, end) forwards;
-  animation-delay: 500ms;
-}
-div .sk4 {
-  vertical-align: top;
-  font-family: "Palatino";
-  color: white;
-  white-space: nowrap;
-  overflow: hidden;
-  width: 0;
-  border-right: 0.15em solid white;
-  letter-spacing: auto;
-  animation: typing 250ms steps(4, end) forwards;
-  animation-delay: 1s;
-}
-
-div .ed1 {
-  vertical-align: top;
-  font-family: "Palatino";
-  color: white;
-  white-space: nowrap;
-  overflow: hidden;
-  width: 0;
-  border-right: 0.15em solid white;
-  letter-spacing: auto;
-  animation: typing 1s steps(10, end) forwards;
 }
 
 /*Contacts.css*/

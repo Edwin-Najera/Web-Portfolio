@@ -3,11 +3,12 @@ import "./global.css";
 
 const StartPage = () => {
   return (
-    <div className="container-fluid" id="Intro">
+    <div className="d-inline-flex" id="Intro">
       <img
-        className="img-profile d-inline-block"
+        className="img-fluid d-inline-block"
         src={Profile}
         alt="ProfilePic"
+        id="introPhoto"
       />
       <div className="container sideimg d-inline-block">
         <h1 className="img-text">Edwin L Najera Gonzalez</h1>
