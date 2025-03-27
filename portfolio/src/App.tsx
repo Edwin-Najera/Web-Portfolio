@@ -5,6 +5,7 @@ import ProjectCards from "./components/ProjectCards";
 import AboutMe from "./components/AboutMe";
 import StartPage from "./components/StartPage";
 import Contact from "./components/Contact";
+import Footer from "./components/footer";
 
 const App = () => {
   return (
@@ -28,10 +29,11 @@ const App = () => {
           <ProjectCards />
         </div>
         <div id="Contact">
-          <h2 className="title-text" id="contact">
-            Contact Me
-          </h2>
+          <h2 className="title-text" id="contact"></h2>
           <Contact />
+        </div>
+        <div id="Footer">
+          <Footer />
         </div>
       </div>
     </Fragment>

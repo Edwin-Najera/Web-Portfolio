@@ -20,9 +20,11 @@ const Navbar = () => {
           <span className="navbar-toggler-icon"></span>
         </button>
         <div className="collapse navbar-collapse" id="navbarNav">
-          <div className="navbar-nav me-auto mb-2 mb-lg-0" id="nav-items">
+          <div className="navbar-nav" id="nav-items">
             <a className="nav-link" href="#">
-              About
+              <ScrollLink to="AboutMe" smooth={true} duration={50}>
+                About
+              </ScrollLink>
             </a>
             <a className="nav-link" href="#">
               <ScrollLink to="Projects" smooth={true} duration={50}>
@@ -30,7 +32,9 @@ const Navbar = () => {
               </ScrollLink>
             </a>
             <a className="nav-link" href="#">
-              Contact
+              <ScrollLink to="Contact" smooth={true} duration={50}>
+                Contact
+              </ScrollLink>
             </a>
             <a
               className="nav-link"

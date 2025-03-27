@@ -22,14 +22,9 @@ body {
     "nav nav nav nav nav "
     "StartPage StartPage StartPage StartPage StartPage"
     "AboutMe AboutMe AboutMe AboutMe AboutMe"
-    "ProjectCard ProjectCard ProjectCard ProjectCard ProjectCard"
-    "ProjectCard ProjectCard ProjectCard ProjectCard ProjectCard"
+    "Projects Projects Projects Projects Projects"
     "Contact Contact Contact Contact Contact"
     "Footer Footer Footer Footer Footer";
-  grid-template-columns: 1fr;
-
-  padding-left: 32px;
-  padding-right: 32px;
 }
 
 #AppGrid > #Navbar {
@@ -40,34 +35,40 @@ body {
   grid-area: StartPage;
 }
 
+#StartPage {
+  padding: 5% 0 5% 0;
+}
+
 #AppGrid > #AboutMe {
   grid-area: AboutMe;
 }
 
-#AppGrid > #ProjectCard {
-  grid-area: ProjectCard;
-  grid-column-start: 5;
+#AboutMe {
+  margin: 5% 0 5% 0;
+  justify-items: center;
 }
 
-#ProjectCard {
-  justify-self: end;
+#AppGrid > #Projects {
+  grid-area: Projects;
+  max-width: 80%;
+}
+
+#Projects {
+  justify-items: center;
+  max-width: 80%;
+  justify-self: center;
+  padding-bottom: 5%;
 }
 
 #AppGrid > #Contact {
   grid-area: Contact;
 }
 
-#AppGrid > Footer {
+#AppGrid > #Footer {
   grid-area: Footer;
 }
 
 #project {
   font-size: 5em;
   margin-bottom: 5%;
-}
-
-#contact {
-  font-size: 5em;
-  margin-top: 6%;
-  margin-bottom: 2%;
 }

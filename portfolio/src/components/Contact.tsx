@@ -1,100 +1,62 @@
-import { Fragment, useState } from "react";
+import { Fragment } from "react";
 import "./global.css";
 
 const Contact = () => {
-  const [emailSubmitted, setEmailSubmitted] = useState(false);
-
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-
-    const data = {
-      email: e.target.email.value,
-      subject: e.target.email.value,
-      message: e.target.email.value,
-    };
-
-    const JSONdata = JSON.stringify(data);
-    const endpoint = "/api/send";
-
-    const options = {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSONdata,
-    };
-
-    const response = await fetch(endpoint, options);
-
-    // Check if the response is OK (status code 200-299)
-    if (response.ok) {
-      const resData = await response.json();
-      console.log("Message Sent.", resData);
-      setEmailSubmitted(true);
-    } else {
-      // If not OK, log the response for debugging
-      const errorText = await response.text(); // Get error text
-      console.error("Error:", errorText);
-      throw new Error("Error sending message: " + errorText);
-    }
-  };
   return (
     <Fragment>
-      <div className="container contact">
-        <div className="reach">
-          <h3 className="connect">Let's Connect</h3>
-          I’m currently seeking new job opportunities and my inbox is always
-          open. If you have a question, want to discuss potential roles, or just
-          want to say hi, I’ll get back to you as soon as possible. I look
-          forward to hearing from you!
-        </div>
-        <form onSubmit={handleSubmit}>
-          <div className="container column">
-            <label htmlFor="email" className="label-tab">
-              Enter Your Email:{" "}
-            </label>
-            <input
-              className="input-item"
-              type="text"
-              name="Subject"
-              placeholder="example@email.com"
-              color="white"
-            />
-            <label htmlFor="subject" className="label-tab">
-              Subject:{" "}
-            </label>
-            <input
-              className="input-item"
-              type="text"
-              name="message"
-              placeholder="Subject"
-            />
-            <label htmlFor="message" className="label-tab">
-              Message:{" "}
-            </label>
-            <input
-              className="input-item"
-              type="text"
-              name="message"
-              id="message"
-              placeholder="Your Message here"
-            />
-            <br />
-            <input
-              className="input-item"
-              type="submit"
-              name="submit"
-              id="submit"
-              onClick={handleSubmit}
-            />
-            {emailSubmitted && (
-              <p className="text-sm pt-2 text-white">
-                Message Sent Successfully! I will get back to you as soon as I
-                can!
-              </p>
-            )}
+      <div className="container-fluid text-start" id="contactContainer">
+        <div className="row align-items-start">
+          <div className="col">
+            <h1 className="connect">Let's Connect</h1>
+            <div className="txt">
+              I’m currently seeking new job opportunities and my inbox is always
+              open. If you have a question, want to discuss potential roles, or
+              just want to say hi, I’ll get back to you as soon as possible. I
+              look forward to hearing from you!
+            </div>
           </div>
-        </form>
+
+          <form className="col ml-2" id="form">
+            <div className="container">
+              <div className="form-floating mb-3">
+                <input
+                  className="form-control"
+                  type="email"
+                  id="email"
+                  placeholder="name@example.com"
+                />
+                <label htmlFor="email">Email Address</label>
+              </div>
+              <div className="form-floating mb-3">
+                <input
+                  className="form-control"
+                  type="text"
+                  name="subject"
+                  id="subject"
+                  placeholder="Subject"
+                />
+                <label htmlFor="subject">Subject</label>
+              </div>
+              <div className="form-floating mb-2">
+                <textarea
+                  className="form-control"
+                  name="message"
+                  id="message"
+                  placeholder="Your Message here"
+                  rows={3}
+                />
+                <label htmlFor="message">Message</label>
+              </div>
+              <br />
+              <input
+                className="form-control mb-5"
+                type="submit"
+                name="submit"
+                id="submit"
+              />
+            </div>
+          </form>
+        </div>
       </div>
     </Fragment>
   );
