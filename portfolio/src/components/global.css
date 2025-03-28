@@ -4,6 +4,13 @@
   justify-content: end;
 }
 
+#navbar {
+  border-bottom-right-radius: 25%;
+  border-bottom-left-radius: 25%;
+  opacity: 0.5;
+  background-color: lightblue;
+}
+
 .navbar-nav {
   justify-self: center;
 }
@@ -14,19 +21,13 @@
 
 /*StartPage.css*/
 #Intro {
-  padding: 5% 0 5% 0;
   justify-items: center;
   align-items: center;
-}
-
-.img-fluid {
-  max-width: 25%;
-  border-radius: 50% 50% 2% 50%;
-  box-shadow: 0 0 3em 2em #f4aab9, 0 0 0 1em #66ccff;
-  margin-left: 5%;
+  border: solid red;
 }
 
 .sideimg {
+  border: solid red;
   color: white;
   font-family: "Palatino";
   font-size: 2em;
@@ -40,7 +41,7 @@
   font-family: "Palatino";
   color: white;
 }
-
+/* 
 .typer {
   font-family: "Palatino";
   color: white;
@@ -53,8 +54,8 @@
   animation: typing 2s steps(30, end) infinite alternate-reverse,
     blink-caret 0.75s step-end infinite;
   animation-delay: 1s;
-}
-
+} */
+/* 
 @keyframes typing {
   from {
     width: 0;
@@ -62,10 +63,10 @@
   to {
     width: 100%;
   }
-}
+} */
 
 /* The typewriter cursor effect */
-@keyframes blink-caret {
+/* @keyframes blink-caret {
   from,
   to {
     border-color: transparent;
@@ -73,7 +74,7 @@
   50% {
     border-color: white;
   }
-}
+} */
 
 /*Project Cards.css*/
 .grid-container {
@@ -111,7 +112,6 @@
 #About {
   align-items: center;
   justify-items: start;
-  border: solid red;
 }
 
 .AboutPhoto {
@@ -139,6 +139,7 @@
 #education {
   color: white;
   text-align: center;
+  border: solid blue;
 }
 
 #buttons {
@@ -219,4 +220,10 @@
 
 #contactContainer {
   max-width: 75%;
+}
+
+/* Footer.tsx */
+#footer {
+  color: grey;
+  justify-items: space-between;
 }

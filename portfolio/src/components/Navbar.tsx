@@ -4,7 +4,7 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 const Navbar = () => {
   return (
-    <nav className="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+    <nav className="navbar navbar-expand-lg fixed-top" id="navbar">
       <div className="container-fluid">
         <a className="navbar-brand" href="#">
           Edwin N.

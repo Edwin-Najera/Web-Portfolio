@@ -23,7 +23,7 @@ const App = () => {
           <AboutMe />
         </div>
         <div id="Projects">
-          <h2 className="title-text" id="project">
+          <h2 className="d-flex justify-content-center title-text" id="project">
             Projects
           </h2>
           <ProjectCards />
