@@ -6,7 +6,7 @@ const Contact = () => {
     <Fragment>
       <div className="d-flex text-start justify-content-center mx-lg-5">
         <div className="d-lg-inline-flex align-items-start">
-          <div className="d-sm-block mt-3" id="reach">
+          <div className="d-sm-block mt-3 ms-sm-5" id="reach">
             <h1 className="connect">Let's Connect</h1>
             <div className="txt">
               I’m currently seeking new job opportunities and my inbox is always
