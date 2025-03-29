@@ -1,4 +1,6 @@
 import { Fragment, useState } from "react";
+import { SiCplusplus } from "react-icons/si";
+import { FaJava, FaPython, FaReact } from "react-icons/fa";
 
 const AboutMe = () => {
   const [isSkillsOpen, setSkillsOpen] = useState(false);
@@ -56,20 +58,34 @@ const AboutMe = () => {
               <div className="filler"></div>
             </button>
           </div>
-          <div className="row" style={{ maxWidth: "25%" }}>
+          <div className="row position-relative" style={{ maxWidth: "25%" }}>
             <div className="col">
               <div className="collapse multi-collapse" id="skills">
-                <div className="card-body">
-                  <div>C++</div>
-                  <div>Java</div>
-                  <div>Python</div>
-                  <div>React</div>
+                <div className="card-body" id="skillDrop">
+                  <div className="d-flex justify-content-evenly">
+                    <div className="card-body skill me-3">
+                      <SiCplusplus />
+                      <p>C++</p>
+                    </div>
+                    <div className="card-body skill me-3">
+                      <FaJava />
+                      <p>Java</p>
+                    </div>
+                    <div className="card-body skill me-3">
+                      <FaPython />
+                      <p>Python</p>
+                    </div>
+                    <div className="card-body skill">
+                      <FaReact />
+                      <p>React</p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-            <div className="col">
+            <div className="col position-absolute">
               <div className="collapse multi-collapse" id="education">
-                <div className="card-body">
+                <div className="card-body d-inline-flex">
                   <div>Comp Sci Undergrad</div>
                 </div>
               </div>

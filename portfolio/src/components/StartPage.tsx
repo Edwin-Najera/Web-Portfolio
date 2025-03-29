@@ -4,7 +4,7 @@ const StartPage = () => {
   return (
     <div className="" id="Intro">
       <div className="container sideimg">
-        <h1 className="img-text">Edwin L Najera Gonzalez</h1>
+        <h1 className="img-text">Edwin Najera Gonzalez</h1>
         {/* <p className="typer"> Computer Science Undergraduate</p> */}
       </div>
     </div>

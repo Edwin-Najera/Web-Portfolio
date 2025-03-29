@@ -19,6 +19,20 @@
   font-size: 30px;
 }
 
+#nav-item {
+  color: black;
+}
+
+.navbar-brand::before {
+  transform: rotate(0);
+}
+
+#nav-item:hover {
+  transform: scale(1.5);
+  color: white;
+  text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em #f4aab9;
+}
+
 /*StartPage.css*/
 #Intro {
   justify-items: center;
@@ -133,13 +147,31 @@
 #skills {
   color: white;
   text-align: center;
-  border: solid red;
+  width: fit-content;
+}
+
+#skillDrop {
+  min-width: 100%;
+}
+
+div .skill {
+  border: solid white;
+  width: auto;
+  height: fit-content;
+  font-size: 2em;
+  padding: 1em;
+  border-radius: 10%;
+  background-color: white;
+  color: black;
+}
+
+.skill:hover {
+  transform: scale(1.05);
 }
 
 #education {
   color: white;
   text-align: center;
-  border: solid blue;
 }
 
 #buttons {
@@ -193,18 +225,18 @@
 }
 
 /*Contacts.css*/
-.reach {
-  color: white;
+#reach {
+  max-width: 100%;
+  width: 50%;
+}
+
+#form {
+  max-width: 100%;
+  width: 50%;
 }
 
 .connect {
   text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em #f4aab9;
-  color: white;
-}
-
-.form-label {
-  margin-right: 2%;
-  align-self: flex-start;
   color: white;
 }
 
@@ -219,7 +251,8 @@
 }
 
 #contactContainer {
-  max-width: 75%;
+  justify-self: center;
+  justify-items: center;
 }
 
 /* Footer.tsx */
