@@ -10,8 +10,8 @@ const AboutMe = () => {
       <div className="container d-inline-flex" id="About">
         <img className="AboutPhoto" alt="About Me Photo" />
         <div className="d-inline">
-          <p className="txt">
-            <section className="header">About Me</section>
+          <div className="txt">
+            <p className="header">About Me</p>
             Hi! I’m Edwin Najera, a Computer Science undergraduate at the
             University of Texas at Arlington. I’m passionate about technology,
             problem-solving, and building innovative solutions through code.
@@ -22,7 +22,7 @@ const AboutMe = () => {
             learning new tech skills. Feel free to connect—I’m always open to
             collaborating and sharing ideas!
             <br />
-          </p>
+          </div>
           <div className="d-inline-flex" id="buttons">
             <button
               className="btn"
@@ -58,25 +58,25 @@ const AboutMe = () => {
               <div className="filler"></div>
             </button>
           </div>
-          <div className="row position-relative" style={{ maxWidth: "25%" }}>
+          <div className="row position-relative" id="dropDowns">
             <div className="col">
               <div className="collapse multi-collapse" id="skills">
-                <div className="card-body" id="skillDrop">
-                  <div className="d-flex justify-content-evenly">
-                    <div className="card-body skill me-3">
-                      <SiCplusplus />
-                      <p>C++</p>
+                <div className="card-body">
+                  <div className="d-lg-inline-flex d-sm-block-flex justify-content-evenly text-wrap">
+                    <div className="me-4">
+                      <SiCplusplus id="icon" />
+                      <p className="">C++</p>
                     </div>
-                    <div className="card-body skill me-3">
-                      <FaJava />
-                      <p>Java</p>
+                    <div className="me-4">
+                      <FaJava id="icon" />
+                      <p className="">Java</p>
                     </div>
-                    <div className="card-body skill me-3">
-                      <FaPython />
+                    <div className="me-4">
+                      <FaPython id="icon" />
                       <p>Python</p>
                     </div>
-                    <div className="card-body skill">
-                      <FaReact />
+                    <div className="">
+                      <FaReact id="icon" />
                       <p>React</p>
                     </div>
                   </div>
@@ -84,8 +84,11 @@ const AboutMe = () => {
               </div>
             </div>
             <div className="col position-absolute">
-              <div className="collapse multi-collapse" id="education">
-                <div className="card-body d-inline-flex">
+              <div
+                className="collapse collapse-horizontal multi-collapse text-nowrap"
+                id="education"
+              >
+                <div className="card-body">
                   <div>Comp Sci Undergrad</div>
                 </div>
               </div>

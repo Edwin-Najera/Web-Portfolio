@@ -4,13 +4,9 @@ import "./global.css";
 const Contact = () => {
   return (
     <Fragment>
-      <div
-        className="d-flex text-start justify-content-center mx-5 px-5"
-        id="contactContainer"
-        style={{ border: "solid red" }}
-      >
-        <div className="align-items-start">
-          <div className="d-block-flex" id="reach">
+      <div className="d-flex text-start justify-content-center mx-lg-5">
+        <div className="d-lg-inline-flex align-items-start">
+          <div className="d-sm-block mt-3" id="reach">
             <h1 className="connect">Let's Connect</h1>
             <div className="txt">
               I’m currently seeking new job opportunities and my inbox is always
@@ -19,8 +15,8 @@ const Contact = () => {
               look forward to hearing from you!
             </div>
           </div>
-          <form className="d-block-flex" id="form">
-            <div className="container">
+          <form className="d-lg-inline-flex w-sm-100" id="form">
+            <div className="container w-sm-100">
               <div className="form-floating mb-3">
                 <input
                   className="form-control"
