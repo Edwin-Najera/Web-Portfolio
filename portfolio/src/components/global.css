@@ -4,13 +4,14 @@
   justify-content: end;
   @media (max-width: 990px) {
     justify-items: center;
+    border: solid blue;
   }
 }
 
 #navbar {
-  border-bottom-right-radius: 25%;
-  border-bottom-left-radius: 25%;
-  opacity: 0.5;
+  border-bottom-right-radius: 2em;
+  border-bottom-left-radius: 2em;
+  opacity: 0.9;
   background-color: lightblue;
 }
 
