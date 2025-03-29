@@ -8,7 +8,7 @@ const AboutMe = () => {
   return (
     <Fragment>
       <div className="container d-inline-flex" id="About">
-        <img className="AboutPhoto" alt="About Me Photo" />
+        {/* <img className="AboutPhoto" alt="About Me Photo" /> */}
         <div className="d-inline">
           <div className="txt">
             <p className="header">About Me</p>

@@ -37,11 +37,9 @@
 #Intro {
   justify-items: center;
   align-items: center;
-  border: solid red;
 }
 
 .sideimg {
-  border: solid red;
   color: white;
   font-family: "Palatino";
   font-size: 2em;
