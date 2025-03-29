@@ -2,6 +2,9 @@
 
 #navbarNav {
   justify-content: end;
+  @media (max-width: 990px) {
+    justify-items: center;
+  }
 }
 
 #navbar {
@@ -9,10 +12,6 @@
   border-bottom-left-radius: 25%;
   opacity: 0.5;
   background-color: lightblue;
-}
-
-.navbar-nav {
-  justify-self: center;
 }
 
 .nav-links {
