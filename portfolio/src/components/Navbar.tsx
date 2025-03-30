@@ -4,7 +4,7 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 const Navbar = () => {
   return (
-    <nav className="navbar navbar-expand-lg fixed-top" id="navbar">
+    <nav className="navbar navbar-expand-xl fixed-top" id="navbar">
       <div className="container-fluid">
         <a className="navbar-brand ms-4" href="#" id="nav-item">
           E N
@@ -20,7 +20,10 @@ const Navbar = () => {
           <span className="navbar-toggler-icon"></span>
         </button>
         <div className="collapse navbar-collapse" id="navbarNav">
-          <div className="navbar-nav" id="nav-items">
+          <div
+            className="d-flex navbar-nav justify-content-center"
+            id="nav-items"
+          >
             <div className="nav-link" id="nav-item">
               <ScrollLink to="AboutMe" smooth={true} duration={50}>
                 About
