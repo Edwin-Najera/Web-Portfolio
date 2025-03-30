@@ -4,6 +4,7 @@
   justify-content: end;
   @media (max-width: 1179px) {
     justify-items: center;
+    justify-content: center;
     border: solid blue;
   }
 }
