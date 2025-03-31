@@ -2,10 +2,8 @@
 
 #navbarNav {
   justify-content: end;
-  @media (max-width: 1179px) {
-    justify-content: center;
-    justify-items: center;
-    border: solid blue;
+  @media (max-width: 1199px) {
+    justify-content: space-around;
   }
 }
 
@@ -13,7 +11,7 @@
   border-bottom-right-radius: 2em;
   border-bottom-left-radius: 2em;
   opacity: 0.9;
-  background-color: lightblue;
+  background-color: darkgray;
 }
 
 .nav-links {
@@ -27,12 +25,17 @@
 #nav-items {
   @media (max-width: 1200px) {
     justify-self: center;
-    border: solid black;
+    max-width: fit-content;
   }
 }
 
-.navbar-brand::before {
-  transform: rotate(0);
+.navbar-brand {
+  width: 75px;
+}
+
+#logo {
+  width: 100%;
+  height: auto;
 }
 
 #nav-item:hover {
@@ -42,22 +45,32 @@
   cursor: pointer;
 
   @media (max-width: 1200px) {
-    transform: scale(1.2);
+    transform: scale(1);
   }
 }
 
 /*StartPage.css*/
 #Intro {
   justify-items: center;
-  align-items: center;
+  align-self: center;
 }
 
-.sideimg {
+.side-img {
   color: white;
   font-family: "Palatino";
   font-size: 2em;
-  text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em #f4aab9;
   max-width: fit-content;
+  animation: scaleOut 1s forwards;
+  animation-delay: 2s;
+  opacity: 0;
+  transform: scale(0);
+}
+
+@keyframes scaleOut {
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
 
 .img-text {
@@ -114,6 +127,19 @@
   box-shadow: 0 0 50px 0 red;
   padding: 10px;
   overflow: hidden;
+}
+
+#projects {
+  opacity: 0;
+  transform: translateY(100%);
+  animation: fadeBottom 2s forwards;
+}
+
+@keyframes fadeBottom {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 #projects:hover {

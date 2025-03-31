@@ -4,7 +4,7 @@ import "./global.css";
 const Contact = () => {
   return (
     <Fragment>
-      <div className="d-flex text-start justify-content-center mx-lg-5">
+      <section className="d-flex text-start justify-content-center mx-lg-5">
         <div className="d-lg-inline-flex align-items-start">
           <div className="d-sm-block mt-3 ms-sm-5" id="reach">
             <h1 className="connect">Let's Connect</h1>
@@ -21,10 +21,10 @@ const Contact = () => {
                 <input
                   className="form-control"
                   type="email"
-                  id="email"
+                  id="Email"
                   placeholder="name@example.com"
                 />
-                <label htmlFor="email">Email</label>
+                <label htmlFor="Email">Email</label>
               </div>
               <div className="form-floating mb-3">
                 <input
@@ -56,7 +56,7 @@ const Contact = () => {
             </div>
           </form>
         </div>
-      </div>
+      </section>
     </Fragment>
   );
 };

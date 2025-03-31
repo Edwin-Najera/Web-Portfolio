@@ -1,6 +1,7 @@
 body {
   background-image: linear-gradient(to top, rgb(3, 3, 72), rgb(13, 11, 17));
   background-color: black;
+  height: 100%;
 }
 
 .header {
@@ -17,11 +18,12 @@ body {
 }
 
 #AppGrid {
+  border: solid blue;
   display: grid;
   grid-template-rows: auto;
   grid-template-areas:
-    "nav nav nav nav nav "
-    "StartPage StartPage StartPage StartPage StartPage"
+    "nav nav nav nav nav"
+    "Intro Intro Intro Intro Intro"
     "AboutMe AboutMe AboutMe AboutMe AboutMe"
     "Projects Projects Projects Projects Projects"
     "Contact Contact Contact Contact Contact"
@@ -30,10 +32,15 @@ body {
 
 #AppGrid > #Navbar {
   grid-area: nav;
+  border: solid white;
+  position: sticky;
 }
 
-#AppGrid > #StartPage {
-  grid-area: StartPage;
+#AppGrid > #Intro {
+  grid-area: Intro;
+  min-width: 100vh;
+  min-height: 100vh;
+  align-content: center;
 }
 
 #StartPage {

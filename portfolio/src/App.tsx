@@ -11,11 +11,9 @@ const App = () => {
   return (
     <Fragment>
       <div id="AppGrid">
-        <div id="Navbar">
-          <Navbar />
-        </div>
+        <Navbar />
 
-        <div id="StartPage">
+        <div id="Intro">
           <StartPage />
         </div>
         <div id="AboutMe">

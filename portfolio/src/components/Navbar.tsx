@@ -1,13 +1,14 @@
 import "./global.css";
 import { Link as ScrollLink } from "react-scroll";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
+import Logo from "./Photos/EN-Logo.png";
 
 const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-xl fixed-top" id="navbar">
       <div className="container-fluid">
         <a className="navbar-brand ms-4" href="#" id="nav-item">
-          E N
+          <img src={Logo} alt="Logo" id="logo" />
         </a>
         <button
           className="navbar-toggler"
