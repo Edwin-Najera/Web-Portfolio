@@ -60,10 +60,12 @@
   height: 100vh;
   background-color: black;
   background-image: url(./Photos/Intro-Background.jpg);
+  display: block;
 }
 
 .side-img {
-  display: block;
+  display: flexbox;
+  max-width: fit-content;
   color: white;
   font-family: "Palatino";
   font-size: 2em;
@@ -105,7 +107,6 @@
   @media (max-width: 1200px) {
     display: block;
   }
-  border: solid red;
 }
 
 .header {
