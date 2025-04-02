@@ -1,5 +1,4 @@
 body {
-  background-image: linear-gradient(to top, rgb(3, 3, 72), rgb(13, 11, 17));
   background-color: black;
   height: 100%;
 }
@@ -29,7 +28,6 @@ body {
 }
 
 #AppGrid > #Intro {
-  border: solid lime;
   grid-area: Intro;
   min-width: 100vh;
   min-height: 100vh;
@@ -37,27 +35,23 @@ body {
 }
 
 #AppGrid > #AboutMe {
+  background-color: rgba(85, 85, 170, 0.477);
   padding-top: 5%;
   grid-area: AboutMe;
 }
 
-#AboutMe {
-  margin-top: 5%;
-}
-
 #AppGrid > #Projects {
+  background-color: rgba(85, 85, 170, 0.477);
   grid-area: Projects;
-  max-width: 80%;
+  max-width: 100%;
   justify-self: center;
-  border: solid red;
-}
-
-#Projects {
-  margin: 5%;
-  max-width: 80%;
+  padding-inline-start: 10%;
+  padding-inline-end: 10%;
 }
 
 #AppGrid > #Contact {
+  background-color: rgba(85, 85, 170, 0.477);
+  padding-top: 10%;
   grid-area: Contact;
 }
 
