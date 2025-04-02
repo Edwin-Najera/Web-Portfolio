@@ -5,12 +5,13 @@ const StartPage = () => {
   return (
     <Fragment>
       <div className="d-block-flex Intro">
-        <div className="side-img">
+        <div className="side-img ps-5 align-items-center">
           Hi my name is
           <h1 className="img-text">Edwin Najera</h1>
+          Computer Science Undergrad
         </div>
+        <div className="bottom" />
       </div>
-      <div className="bottom" />
     </Fragment>
   );
 };

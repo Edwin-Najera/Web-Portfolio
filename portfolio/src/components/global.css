@@ -11,7 +11,7 @@
   border-bottom-right-radius: 2em;
   border-bottom-left-radius: 2em;
   opacity: 0.9;
-  background-color: rgb(207, 192, 192);
+  background-color: rgb(80, 68, 167);
 }
 
 .nav-links {
@@ -56,18 +56,20 @@
 
 /*StartPage.css*/
 .Intro {
-  align-content: center;
-  height: 90vh;
+  align-content: end;
+  height: 100vh;
   background-color: black;
+  background-image: url(./Photos/Intro-Background.jpg);
 }
 
 .side-img {
   color: white;
   font-family: "Palatino";
   font-size: 2em;
-  max-width: fit-content;
   animation: scaleOut 1s forwards;
   animation-delay: 1s;
+  align-content: center;
+  height: 90%;
   opacity: 0;
   transform: scale(0);
 }
@@ -89,7 +91,7 @@
 .bottom {
   align-self: end;
   width: 100%;
-  height: 10vh;
+  height: 5%;
   background-color: rgba(85, 85, 170, 0.477);
   border-start-start-radius: 2em;
   border-start-end-radius: 2em;
@@ -190,7 +192,7 @@
   align-self: center;
   justify-self: center;
   justify-content: center;
-  animation-delay: 1.5s;
+  animation-delay: 0s;
 }
 
 #Skills > #Typescript {
@@ -206,17 +208,40 @@
   align-self: center;
   justify-self: center;
   justify-content: center;
-  animation-delay: 2s;
+  animation-delay: 500ms;
+}
+
+#Skills > #Css {
+  grid-area: Css;
+  display: flex;
+  background-color: white;
+  border-radius: 10%;
+  border: solid rgb(194, 19, 121);
+  box-shadow: 0 0 50px 0 red;
+  width: 100px;
+  height: 100px;
+  align-items: center;
+  align-self: center;
+  justify-self: center;
+  justify-content: center;
+  animation-delay: 1s;
 }
 
 .logo {
   font-size: 4em;
   opacity: 0;
-  transform: translateY(100%);
+  transform: translate(-150%) scale(0);
 }
 
 .fadeIn {
-  animation: fadeBottom 2s forwards;
+  animation: fadeLogo 500ms forwards;
+}
+
+@keyframes fadeLogo {
+  to {
+    opacity: 1;
+    transform: translate(0, 0) scale(1);
+  }
 }
 
 .fadeIn:hover {

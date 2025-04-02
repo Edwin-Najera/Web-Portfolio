@@ -1,7 +1,7 @@
 import { Fragment } from "react";
 import { useInView } from "react-intersection-observer";
 import { BiLogoCPlusPlus, BiLogoTypescript } from "react-icons/bi";
-import { FaJava, FaPython, FaReact } from "react-icons/fa";
+import { FaJava, FaPython, FaReact, FaCss3Alt } from "react-icons/fa";
 
 const AboutMe = () => {
   const { ref: myRef, inView: visibleElement } = useInView({
@@ -51,6 +51,9 @@ const AboutMe = () => {
           </div>
           <div className={fade} id="Typescript">
             <BiLogoTypescript />
+          </div>
+          <div className={fade} id="Css">
+            <FaCss3Alt />
           </div>
         </div>
       </div>
