@@ -63,6 +63,7 @@
 }
 
 .side-img {
+  display: block;
   color: white;
   font-family: "Palatino";
   font-size: 2em;
@@ -100,6 +101,11 @@
 /*AboutMe.css*/
 #About {
   justify-self: center;
+  display: flex;
+  @media (max-width: 1200px) {
+    display: block;
+  }
+  border: solid red;
 }
 
 .header {
@@ -115,6 +121,7 @@
 #Skills {
   display: grid;
   color: black;
+  max-width: 100%;
   grid-template-rows: 1fr 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-areas:

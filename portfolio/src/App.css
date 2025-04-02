@@ -19,6 +19,7 @@ body {
 #AppGrid {
   display: grid;
   grid-template-rows: auto;
+  max-width: 100%;
   grid-template-areas:
     "Intro Intro Intro Intro Intro"
     "AboutMe AboutMe AboutMe AboutMe AboutMe"
