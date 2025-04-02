@@ -1,17 +1,17 @@
-import { Collapse } from "react-collapse";
 import { Fragment, useState } from "react";
+import { SiCplusplus } from "react-icons/si";
+import { FaJava, FaPython, FaReact } from "react-icons/fa";
 
 const AboutMe = () => {
   const [isSkillsOpen, setSkillsOpen] = useState(false);
   const [isEducationOpen, setEducationOpen] = useState(false);
-
   return (
     <Fragment>
-      <div className="container" id="About">
-        <img className="AboutPhoto d-inline" alt="About Me Photo" />
-        <div>
-          <p className="txt">
-            <section className="header">About Me</section>
+      <div className="container d-inline-flex" id="About">
+        {/* <img className="AboutPhoto" alt="About Me Photo" /> */}
+        <div className="d-inline">
+          <div className="txt">
+            <p className="header">About Me</p>
             Hi! I’m Edwin Najera, a Computer Science undergraduate at the
             University of Texas at Arlington. I’m passionate about technology,
             problem-solving, and building innovative solutions through code.
@@ -22,69 +22,77 @@ const AboutMe = () => {
             learning new tech skills. Feel free to connect—I’m always open to
             collaborating and sharing ideas!
             <br />
-          </p>
-        </div>
-        <div className="container-row">
-          <div className="button-container">
+          </div>
+          <div className="d-inline-flex" id="buttons">
             <button
-              className="btn button-collapse"
+              className="btn"
               type="button"
-              formTarget="skills"
+              data-bs-toggle="collapse"
+              data-bs-target={isEducationOpen ? ".multi-collapse" : "#skills"}
               aria-expanded="false"
-              aria-controls="skills"
+              aria-controls={isEducationOpen ? "skills education" : "skills"}
+              id="skillsButton"
               onClick={() => {
                 setSkillsOpen(!isSkillsOpen);
                 setEducationOpen(false);
               }}
+              style={{ marginRight: "15%" }}
             >
               <span className="button-text">Skills</span>
               <div className="filler" />
             </button>
-            <section id="skills">
-              <Collapse id="skills" isOpened={isSkillsOpen}>
-                <div className="c1">
-                  <div className={isSkillsOpen ? "sk1" : ""}>C++</div>
-                </div>
-                <br />
-                <div className="c2">
-                  <div className={isSkillsOpen ? "sk2" : ""}>Java</div>
-                </div>
-                <br />
-                <div className="c3">
-                  <div className={isSkillsOpen ? "sk3" : ""}>Python</div>
-                </div>
-                <br />
-                <div className="c4">
-                  <div className={isSkillsOpen ? "sk4" : ""}>React</div>
-                </div>
-                <br />
-              </Collapse>
-            </section>
-          </div>
-          <div className="button-container">
             <button
-              className="btn button-collapse"
+              className="btn"
               type="button"
-              formTarget="skills"
+              data-bs-toggle="collapse"
+              data-bs-target={isSkillsOpen ? ".multi-collapse" : "#education"}
               aria-expanded="false"
-              aria-controls="skills"
+              aria-controls={isSkillsOpen ? "education skills" : "education"}
+              id="educationButton"
               onClick={() => {
                 setSkillsOpen(false);
                 setEducationOpen(!isEducationOpen);
               }}
             >
               <span className="button-text">Education</span>
-              <div className="filler" />
+              <div className="filler"></div>
             </button>
-            <section id="education">
-              <Collapse id="education" isOpened={isEducationOpen}>
-                <div className="c1">
-                  <div className={isEducationOpen ? "ed1" : ""}>
-                    Comp Sci Undergrad
+          </div>
+          <div className="row position-relative" id="dropDowns">
+            <div className="col">
+              <div className="collapse multi-collapse" id="skills">
+                <div className="card-body">
+                  <div className="d-lg-inline-flex d-sm-block-flex justify-content-evenly text-wrap">
+                    <div className="me-4">
+                      <SiCplusplus id="icon" />
+                      <p className="">C++</p>
+                    </div>
+                    <div className="me-4">
+                      <FaJava id="icon" />
+                      <p className="">Java</p>
+                    </div>
+                    <div className="me-4">
+                      <FaPython id="icon" />
+                      <p>Python</p>
+                    </div>
+                    <div className="">
+                      <FaReact id="icon" />
+                      <p>React</p>
+                    </div>
                   </div>
                 </div>
-              </Collapse>
-            </section>
+              </div>
+            </div>
+            <div className="col position-absolute">
+              <div
+                className="collapse collapse-horizontal multi-collapse text-nowrap"
+                id="education"
+              >
+                <div className="card-body">
+                  <div>Comp Sci Undergrad</div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -93,3 +101,108 @@ const AboutMe = () => {
 };
 
 export default AboutMe;
+
+
+/*AboutMe.css*/
+.header {
+  text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em #f4aab9;
+  font-size: 5em;
+  color: linear-gradient(left, white, pink);
+}
+
+#About {
+  align-items: center;
+  justify-items: start;
+}
+
+.AboutPhoto {
+  margin-right: 1%;
+  height: 500px;
+}
+
+.btn {
+  color: white;
+  position: relative;
+  padding: 5px 30px;
+  color: white;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  outline: none;
+}
+
+#dropDowns {
+  max-width: 100%;
+}
+
+#skills {
+  color: white;
+}
+
+#icon {
+  font-size: 3em;
+  padding: 1%;
+  border-radius: 10%;
+  color: white;
+}
+
+.icon:hover {
+  transform: scale(1.05);
+}
+
+#education {
+  color: white;
+  padding: 1em 1em 1em 0;
+  max-width: 100%;
+}
+
+#buttons {
+  width: 25%;
+}
+
+/* 
+.button-container {
+  display: inline-block;
+  vertical-align: top;
+  align-self: start;
+}
+
+.button-collapse {
+  position: relative;
+  padding: 5px 30px;
+  color: white;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  outline: none;
+} 
+*/
+
+.button-text {
+  position: relative;
+  color: white;
+  text-shadow: 1px 1px 2px red;
+  z-index: 1; /* Keep the text above the filling effect */
+}
+
+.filler {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #6d3b45; /* Darker shade for the fill effect */
+  border-radius: 6px;
+  transform-origin: bottom left;
+  transform: scale(0, 0); /* Start with no fill */
+  transition: transform 0.4s;
+}
+
+.btn:hover .filler {
+  transform: scale(1, 1);
+}
+
+.btn:focus {
+  outline: none;
+}
+

@@ -1,8 +1,17 @@
 import "./global.css";
+import { useInView } from "react-intersection-observer";
 
 const ProjectCards = () => {
+  const { ref: myRef, inView: visibleElement } = useInView({
+    triggerOnce: true,
+  });
+  let fade = "";
+
+  if (visibleElement) {
+    fade = "projects";
+  }
   return (
-    <div className="row row-cols-1 row-cols-md-2 g-4">
+    <div ref={myRef} className="row row-cols-1 row-cols-md-2 g-4">
       <a
         className="col-sm-4"
         href="https://github.com/Edwin-Najera/Web-Portfolio"
@@ -10,7 +19,7 @@ const ProjectCards = () => {
         rel="noopener noreferrer"
         style={{ textDecoration: "none" }}
       >
-        <div className="card" id="projects">
+        <div className="card" id={fade}>
           <img className="card-img-top mh-50" alt="Project Image" />
           <div className="card-body">
             <h5 className="card-title">Personal Portfolio</h5>
@@ -35,7 +44,7 @@ const ProjectCards = () => {
           rel="noopener noreferrer"
           style={{ textDecoration: "none" }}
         >
-          <div className="card mb-5" id="projects">
+          <div className="card mb-5" id={fade}>
             <div className="card-body">
               <h5 className="card-title">Java Projects</h5>
               <p className="card-text">
@@ -44,7 +53,7 @@ const ProjectCards = () => {
             </div>
           </div>
         </a>
-        <div className="card" id="projects">
+        <div className="card" id={fade}>
           <div className="card-body">
             <h5 className="card-title">C++ Projects</h5>
             <p className="card-text">Small side projects using C++ language</p>

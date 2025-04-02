@@ -18,11 +18,9 @@ body {
 }
 
 #AppGrid {
-  border: solid blue;
   display: grid;
   grid-template-rows: auto;
   grid-template-areas:
-    "nav nav nav nav nav"
     "Intro Intro Intro Intro Intro"
     "AboutMe AboutMe AboutMe AboutMe AboutMe"
     "Projects Projects Projects Projects Projects"
@@ -30,41 +28,33 @@ body {
     "Footer Footer Footer Footer Footer";
 }
 
-#AppGrid > #Navbar {
-  grid-area: nav;
-  border: solid white;
-  position: sticky;
-}
-
 #AppGrid > #Intro {
+  border: solid lime;
   grid-area: Intro;
   min-width: 100vh;
   min-height: 100vh;
   align-content: center;
 }
 
-#StartPage {
-  padding: 5% 0 5% 0;
-}
-
 #AppGrid > #AboutMe {
+  padding-top: 5%;
   grid-area: AboutMe;
 }
 
 #AboutMe {
-  margin: 5% 0 5% 0;
-  justify-items: center;
+  margin-top: 5%;
 }
 
 #AppGrid > #Projects {
   grid-area: Projects;
   max-width: 80%;
+  justify-self: center;
+  border: solid red;
 }
 
 #Projects {
+  margin: 5%;
   max-width: 80%;
-  justify-self: center;
-  padding-bottom: 5%;
 }
 
 #AppGrid > #Contact {
