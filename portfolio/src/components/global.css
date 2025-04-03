@@ -11,7 +11,7 @@
   border-bottom-right-radius: 2em;
   border-bottom-left-radius: 2em;
   opacity: 0.9;
-  background-color: rgb(80, 68, 167);
+  background-color: rgb(115, 102, 216);
 }
 
 .nav-links {
@@ -44,7 +44,7 @@
 }
 
 #nav-item:hover {
-  transform: scale(1.5);
+  transform: scale(1.25);
   color: white;
   text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em #f4aab9;
   cursor: pointer;
@@ -140,8 +140,7 @@
   display: flex;
   background-color: white;
   border-radius: 10%;
-  border: solid rgb(194, 19, 121);
-  box-shadow: 0 0 50px 0 red;
+  box-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em #f4aab9;
   width: 100px;
   height: 100px;
   font-size: 4em;
@@ -156,8 +155,7 @@
   display: flex;
   background-color: white;
   border-radius: 10%;
-  border: solid rgb(194, 19, 121);
-  box-shadow: 0 0 50px 0 red;
+  box-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em #f4aab9;
   width: 100px;
   height: 100px;
   font-size: 4em;
@@ -173,8 +171,7 @@
   display: flex;
   background-color: white;
   border-radius: 10%;
-  border: solid rgb(194, 19, 121);
-  box-shadow: 0 0 50px 0 red;
+  box-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em #f4aab9;
   width: 100px;
   height: 100px;
   font-size: 4em;
@@ -190,8 +187,7 @@
   display: flex;
   background-color: white;
   border-radius: 10%;
-  border: solid rgb(194, 19, 121);
-  box-shadow: 0 0 50px 0 red;
+  box-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em #f4aab9;
   width: 100px;
   height: 100px;
   font-size: 4em;
@@ -207,8 +203,7 @@
   display: flex;
   background-color: white;
   border-radius: 10%;
-  border: solid rgb(194, 19, 121);
-  box-shadow: 0 0 50px 0 red;
+  box-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em #f4aab9;
   width: 100px;
   height: 100px;
   align-items: center;
@@ -223,8 +218,7 @@
   display: flex;
   background-color: white;
   border-radius: 10%;
-  border: solid rgb(194, 19, 121);
-  box-shadow: 0 0 50px 0 red;
+  box-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em #f4aab9;
   width: 100px;
   height: 100px;
   align-items: center;
@@ -259,6 +253,7 @@
 .Projects {
   display: flex;
   justify-items: center;
+  border: solid red;
 
   @media (max-width: 1200px) {
     display: block;
@@ -267,11 +262,11 @@
 }
 
 .card {
-  max-width: 50%;
   max-height: 100%;
+  max-width: 25%;
   border: 1px solid #ddd;
   border-radius: 8px;
-  box-shadow: 0 0 50px 0 red;
+  box-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em #f4aab9;
   overflow: hidden;
   opacity: 0;
   transform: translateY(50%);

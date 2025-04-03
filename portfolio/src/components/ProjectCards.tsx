@@ -1,5 +1,6 @@
 import "./global.css";
 import { useInView } from "react-intersection-observer";
+import Portfolio from "./Photos/Portfolio.png";
 
 const ProjectCards = () => {
   const { ref: myRef, inView: visibleElement } = useInView({
@@ -19,7 +20,7 @@ const ProjectCards = () => {
         style={{ textDecoration: "none" }}
       >
         <div className="card" id={fade}>
-          <img className="card-img-top" alt="Project Image" />
+          <img className="card-img-top" src={Portfolio} alt="Project Image" />
           <div className="card-body">
             <h5 className="card-title">Personal Portfolio</h5>
             <p className="card-text">
