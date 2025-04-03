@@ -58,8 +58,6 @@
 .Intro {
   align-content: end;
   height: 100vh;
-  background-color: black;
-  background-image: url(./Photos/Intro-Background.jpg);
   display: block;
 }
 

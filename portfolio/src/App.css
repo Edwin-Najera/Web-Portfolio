@@ -30,6 +30,7 @@ body {
 
 #AppGrid > #Intro {
   grid-area: Intro;
+  background-image: url(./components/Photos/Intro-Background.jpg);
   display: block;
   min-width: 100vh;
   min-height: 100vh;
