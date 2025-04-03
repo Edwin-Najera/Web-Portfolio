@@ -1,7 +1,27 @@
-import { Fragment } from "react";
+import { Fragment, useState } from "react";
 import "./global.css";
+import emailjs from "@emailjs/browser";
 
 const Contact = () => {
+  const [state, setState] = useState<string>();
+
+  const handSubmit = (e) => {
+    e.preventDefault();
+
+    setState("loading");
+
+    emailjs.sendForm(
+      "service_jjivtzs",
+      "template_y90rkqk",
+      e.target,
+      "kv-61HwN9YJbAzsqf"
+    );
+
+    setTimeout(() => {
+      setState("ready");
+    }, 1500);
+  };
+
   return (
     <Fragment>
       <section className="d-flex text-start justify-content-center mx-lg-5">
@@ -15,13 +35,18 @@ const Contact = () => {
               look forward to hearing from you!
             </div>
           </div>
-          <form className="d-lg-inline-flex w-sm-100" id="form">
+          <form
+            className="d-lg-inline-flex w-sm-100"
+            id="form"
+            onSubmit={handSubmit}
+          >
             <div className="container w-sm-100">
               <div className="form-floating mb-3">
                 <input
                   className="form-control"
                   type="email"
                   id="Email"
+                  name="email_from"
                   placeholder="name@example.com"
                 />
                 <label htmlFor="Email">Email</label>
@@ -30,11 +55,11 @@ const Contact = () => {
                 <input
                   className="form-control"
                   type="text"
-                  name="subject"
+                  name="name"
                   id="subject"
                   placeholder="Subject"
                 />
-                <label htmlFor="subject">Subject</label>
+                <label htmlFor="subject">Name</label>
               </div>
               <div className="form-floating mb-2">
                 <textarea
@@ -52,6 +77,7 @@ const Contact = () => {
                 type="submit"
                 name="submit"
                 id="submit"
+                disabled={state == "loading"}
               />
             </div>
           </form>
