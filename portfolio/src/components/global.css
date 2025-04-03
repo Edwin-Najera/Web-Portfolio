@@ -253,7 +253,6 @@
 .Projects {
   display: flex;
   justify-items: center;
-  border: solid red;
 
   @media (max-width: 1200px) {
     display: block;
