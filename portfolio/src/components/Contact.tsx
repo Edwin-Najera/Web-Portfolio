@@ -5,7 +5,7 @@ import emailjs from "@emailjs/browser";
 const Contact = () => {
   const [state, setState] = useState<string>();
 
-  const handSubmit = (e) => {
+  const handSubmit = (e: React.ChangeEvent<HTMLInputElement>) => {
     e.preventDefault();
 
     setState("loading");
