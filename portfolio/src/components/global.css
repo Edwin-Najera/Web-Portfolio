@@ -271,7 +271,7 @@
   transform: translateY(50%);
   justify-self: center;
 
-  @media (max-height: 2556px) {
+  @media (max-width: 1200px) {
     max-height: 25%;
     max-width: 100%;
   }
