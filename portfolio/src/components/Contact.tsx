@@ -17,6 +17,8 @@ const Contact = () => {
       "kv-61HwN9YJbAzsqf"
     );
 
+    alert("Email sent successfully!!");
+
     setTimeout(() => {
       setState("ready");
     }, 1500);
