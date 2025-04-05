@@ -277,6 +277,10 @@
   }
 }
 
+.card-img-top {
+  background-image: contain;
+}
+
 #projects {
   animation: fadeBottom 2s forwards;
 }
