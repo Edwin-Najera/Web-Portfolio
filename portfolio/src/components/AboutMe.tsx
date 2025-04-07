@@ -17,7 +17,7 @@ const AboutMe = () => {
     <Fragment>
       <div className="row container" id="About">
         {/* <img className="AboutPhoto" alt="About Me Photo" /> */}
-        <div className="col d-block-flex">
+        <div className="col d-block-flex" id="Description">
           <p className="header">About Me</p>
           <div className="About-txt">
             Hi! I’m Edwin Najera, a Computer Science undergraduate at the
